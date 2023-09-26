@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "BeVietnamPro";
+}
+@font-face {
+    font-family: "BeVietnamPro";
+    src: url(../FONTS/BeVietnamPro-Black.ttf) format(truetype),
+        url(../FONTS/BeVietnamPro-BlackItalic.ttf) format(truetype),
+        url(../FONTS/BeVietnamPro-Bold.ttf) format(truetype),
+        url(../FONTS/BeVietnamPro-BoldItalic.ttf) format(truetype),
+        url(../FONTS/BeVietnamPro-ExtraBold.ttf) format(truetype),
+        url(../FONTS/BeVietnamPro-ExtraBoldItalic.ttf) format(truetype),
+        url(../FONTS/BeVietnamPro-ExtraLight.ttf) format(truetype),
+        url(../FONTS/BeVietnamPro-ExtraLightItalic.ttf) format(truetype),
+        url(../FONTS/BeVietnamPro-Italic.ttf) format(truetype),
+        url(../FONTS/BeVietnamPro-Light.ttf) format(truetype),
+        url(../FONTS/BeVietnamPro-LightItalic.ttf) format(truetype),
+        url(../FONTS/BeVietnamPro-Medium.ttf) format(truetype),
+        url(../FONTS/BeVietnamPro-MediumItalic.ttf) format(truetype),
+        url(../FONTS/BeVietnamPro-Regular.ttf) format(truetype),
+        url(../FONTS/BeVietnamPro-SemiBold.ttf) format(truetype),
+        url(../FONTS/BeVietnamPro-SemiBoldItalic.ttf) format(truetype),
+        url(../FONTS/BeVietnamPro-Thin.ttf) format(truetype),
+        url(../FONTS/BeVietnamPro-ThinItalic.ttf) format(truetype);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    font-weight: 400;
+
+    color: white;
+
+    background-image: url(../IMG/Background_purple-minimalism.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top center;
+}
+
+/* HEADER */
+.container-header {
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.div__border-text {
+    padding: 0.3em 1em;
+
+    border: 2px solid white;
+    border-radius: 1em;
+
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.primary-title {
+    font-size: 2em;
+}
+
+/* MAIN */
+.container-main {
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FORM */
+.container-form {
+    padding: 1.7em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    border: 2px solid white;
+    border-radius: 1em;
+    box-shadow: 0px 12px 10px 1px rgba(0, 0, 0, 0.4);
+
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+.form__header {
+    margin-bottom: 0.9em;
+    width: 100%;
+}
+.title-primary {
+    font-size: 2.2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Main */
+.form__main {
+    width: 100%;
+}
+.div__box-bar {
+    margin: 0.7em 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.input__text {
+    height: 50px;
+    width: 23em;
+
+    padding: 0.7em 2.3em 0.7em 1em;
+    color: white;
+
+    border: 2px solid white;
+    border-radius: 1em;
+    background: transparent;
+}
+.input__text:focus {
+    outline: none;
+}
+.input__text::placeholder {
+    font-size: 1.1em;
+    color: #ebebeb;
+    letter-spacing: 1.2px;
+}
+
+.icon-user {
+    font-size: 1.4em;
+    display: block;
+
+    position: absolute;
+    top: 4.9em;
+    left: 13.5em;
+}
+.icon-lock {
+    font-size: 1.4em;
+    display: block;
+
+    position: absolute;
+    top: 7.7em;
+    left: 13.5em;
+}
+
+/* Footer */
+.form__footer {
+    width: 100%;
+}
+.form__footer-div {
+    padding: 0.3em 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.label__get {
+    padding-bottom: 0.2em;
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent;
+    transition: 0.7s;
+}
+.label__get:hover {
+    border-bottom: 1px solid white;
+}
+.input__check {
+    font-size: 1em;
+    cursor: pointer;
+}
+.p__text {
+    margin-left: 0.5em;
+
+    font-size: 0.8em;
+
+    text-align: left;
+    letter-spacing: 1.2px;
+    cursor: pointer;
+}
+
+.div__boxget {
+    padding-bottom: 0.2em;
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent;
+    transition: 0.7s;
+}
+.div__boxget:hover {
+    border-bottom: 1px solid white;
+}
+.a__boxget {
+    font-size: 0.8em;
+    text-align: right;
+    text-decoration: none;
+    letter-spacing: 1.2px;
+    color: white;
+}
+
+.button__login {
+    height: 2.7em;
+    width: 100%;
+
+    margin-top: 0.4em;
+
+    color: black;
+    cursor: pointer;
+
+    border: 2px solid white;
+    border-radius: 1em;
+    background-color: white;
+    transition: 0.7s;
+}
+.button__login:hover {
+    color: white;
+    background: transparent;
+}
+
+/* Register */
+.register {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rgt__text {
+    font-size: 0.8em;
+}
+.rgt__a {
+    margin-left: 0.5em;
+    font-size: 0.8em;
+    color: white;
+}
+.rgt__a:hover {
+    text-decoration: none;
+}
+
+/* FOOTER */
+.container-footer {
+    height: 10vh;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* NAV */
+.ul__menu-footer {
+    display: flex;
+    gap: 1.5em;
+    list-style: none;
+}
+.a__text-link {
+    font-size: 0.9em;
+    text-decoration: none;
+    color: #ebebeb;
+}
+.a__text-link:hover {
+    color: #ababab;
+    text-decoration: underline;
+}
